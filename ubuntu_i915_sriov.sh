@@ -46,7 +46,7 @@ sudo apt install build-essential dkms -y
 
 # Add and install the i915 SR-IOV DKMS module
 cd i915-sriov-dkms && sudo dkms add .
-cd i915-sriov-dkms && sudo dkms install -m i915-sriov-dkms -v $(cat VERSION) --force
+sudo dkms install -m i915-sriov-dkms -v $(cat VERSION) --force
 
 # Update initramfs
 sudo update-initramfs -u
